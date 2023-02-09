@@ -1,0 +1,43 @@
+/*contact*/
+
+.contact_main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 80%;
+    margin: 10px auto;
+}
+
+.text_label{
+ color: #9961EB;
+ font-weight: bold;
+ text-align: left;
+ margin: 20px 51px;
+ font-size: 30px;
+ }
+.texte-space{
+    font-size: 22px;
+    margin: 0 auto 10px;
+    padding: 20px;
+    width: 80%;
+    border: 2px solid #9961EB;
+    box-shadow: 3px 3px #9961EB;
+    border-radius: 15px;
+}
+
+#mensage{
+    height: 196px;
+}
+
+.contact_title, 
+.dev_title{
+    color: #9961EB;
+    font-weight: bold;
+    font-size: 40px;
+    margin: 30px auto;
+}
+
+@media (min-width:720px) {
+    .text_label{
+        margin: 20px 198px;
+}}

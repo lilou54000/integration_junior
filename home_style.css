@@ -1,0 +1,47 @@
+/*home page*/
+main {
+ display: flex;
+ flex-direction: column;
+ align-content: center;
+}
+.section-description{
+    padding: 30px;
+}
+.section-description_title, 
+.section-description_title_article {
+    color: #9961EB;
+    font-weight: bold;
+    font-size: 45px;
+}
+
+.section-description_title:nth-child(even){
+    text-align: left;
+}
+.section-description_title:nth-child(odd){
+    text-align: right;
+}
+
+
+.section-description_paragraphe{
+    background-color: #F7E4FF;
+    margin: 0 auto;
+    padding: 20px;
+    width: 80%;
+    border-radius: 15px;
+}
+
+
+ /*erase content main during menu*/
+ .nav-container input[type="checkbox"]:checked ~ .main *.section-description {
+    visibility: hidden;
+   }
+ 
+   @media (min-width:768px) {
+    .section-description_title, 
+.section-description_title_article {
+    font-size: 35px;
+}
+.section-description_title:nth-child(odd), .section-description_title:nth-child(even){
+    text-align: right;
+}
+}
